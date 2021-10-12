@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,37 +8,112 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
 
-    <title>Fotografo</title>
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <!-- *** -->
 
+    <title>Fotografo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav>
-        <a href="#" class="Logo">Foto</a>
-        <ul class="menu">
-            <li class="menu home">Home</li>
-            <li class="menu galeria">Galeria</li>
-            <li class="menu sobre">Sobre</li>
-        </ul>
+        <div class="container">
+            <div id="logo">Fotografo</div>
+            <ul id="menu">
+                <li class="menu-botao">Principal</li>
+                <li class="menu-botao">Sobre</li>
+                <li class="menu-botao">Galeria</li>
+                <li class="menu-botao">Contato</li>
+            </ul>
+        </div>
     </nav>
-    <header>
-        <h1>Fotógrafo Profissional</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae tortor augue. Etiam nec tortor purus. Vivamus dictum nisi sed mauris mollis pretium. Phasellus facilisis turpis eget nisl blandit finibus. Morbi finibus tincidunt nibh et sodales. 
-        </p>
+    <header id="cab1">
+        <div class="container2">
+            <h1 class="descricao">Fotografo Profissional</h1>
+            <button>Sobre mim</button>
+            <button>Contato</button>
+        </div>
     </header>
-    <section>
-        <h2>Galeria</h2>
-        <img src="img/img1.jpg" alt="" />
-        <img src="img/img2.jpg" alt="" />
-        <img src="img/img3.jpg" alt="" />
-        <img src="img/img4.jpg" alt="" />
-        <img src="img/img5.jpg" alt="">
-    </section>
-    <footer>
-        <p>Site desenvolvido por Mezaki</p>
-    </footer>
-    
+    <main>
+        <div id="sobre">
+            <article class="texto-sobre">
+                <header class="titulo-sobre">
+                    <h2>Sobre Mim</h2>
+                </header>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati repudiandae necessitatibus
+                    dolorem, explicabo incidunt sed voluptas? Enim in, nisi iusto accusamus placeat velit maiores
+                    atque?
+                    Magni officia porro ad cumque?</p>
+            </article>
+            <section class="imagem-sobre">
+                <img src="./img/fotografo.jpg" alt="fotografo" class="imagem">
+            </section>
+        </div>
+        <div id="galeria">
+            <h2 class="titulo-galeria">Galeria</h2>
+            <section class="imagem1">
+                <div class="texto-galeria">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto non deserunt nesciunt
+                        perspiciatis labore sunt incidunt. Dolore beatae molestiae porro laudantium nostrum voluptatum
+                        atque quidem labore, magnam id dolores nihil.</p>
+                </div>
+                <div class="imagem-galeira"><img src="./img/img1.jpg" alt="imagem 1"></div>
+            </section>
+            <section class="imagem1">
+                <div class="texto-galeria">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto non deserunt nesciunt
+                        perspiciatis labore sunt incidunt. Dolore beatae molestiae porro laudantium nostrum voluptatum
+                        atque quidem labore, magnam id dolores nihil.</p>
+                </div>
+                <div class="imagem-galeira"><img src="./img/img2.jpg" alt="imagem 2"></div>
+            </section>
+            <section class="imagem1">
+                <div class="texto-galeria">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto non deserunt nesciunt
+                        perspiciatis labore sunt incidunt. Dolore beatae molestiae porro laudantium nostrum voluptatum
+                        atque quidem labore, magnam id dolores nihil.</p>
+                </div>
+                <div class="imagem-galeira"><img src="./img/img3.jpg" alt="imagem 3"></div>
+            </section>
+            <section class="imagem1">
+                <div class="texto-galeria">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto non deserunt nesciunt
+                        perspiciatis labore sunt incidunt. Dolore beatae molestiae porro laudantium nostrum voluptatum
+                        atque quidem labore, magnam id dolores nihil.</p>
+                </div>
+                <div class="imagem-galeira"><img src="./img/img4.jpg" alt="imagem 4"></div>
+            </section>
+            <section class="imagem1">
+                <div class="texto-galeria">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto non deserunt nesciunt
+                        perspiciatis labore sunt incidunt. Dolore beatae molestiae porro laudantium nostrum voluptatum
+                        atque quidem labore, magnam id dolores nihil.</p>
+                </div>
+                <div class="imagem-galeira"><img src="./img/img5.jpg" alt="imagem 5"></div>
+            </section>
+        </div>
+        <div id="contato">
+            <section class="conteudo-contato">
+                <h2>Contatos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, ducimus debitis inventore
+                    dignissimos facilis neque. Voluptates, iure quae itaque officiis distinctio, praesentium nobis
+                    fugit, suscipit possimus veniam optio illum quaerat!</p>
+            </section>
+            <form method="get">
+                <input type="text" id="email" name="email" placeholder="Digite seu Email">
+                <textarea id="Msn-contato" name="msn-contato"></textarea>
+                <input type="submit" id="enviar" name="enviar">
+            </form>
+        </div>
+    </main>
+    <main>
+
+    </main>
+
 </body>
+
 </html>
